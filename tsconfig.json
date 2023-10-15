@@ -21,13 +21,7 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@api": ["./src/api"],
-      "@providers": ["./src/providers"],
-      "@providers/*": ["./src/providers/*"],
-      "@routes": ["./src/routes"],
-      "@routes/*": ["./src/routes/*"],
-      "@theme": ["./src/theme"],
-      "@theme/*": ["./src/theme/*"]
+      "@*": ["./src/*"]
     }
   },
   "include": [

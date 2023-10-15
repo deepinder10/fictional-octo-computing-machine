@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes';
 import './index.css';
+import { UserProvider } from "@providers";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -11,7 +12,9 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes />
+      <UserProvider>
+        <Routes />
+      </UserProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
